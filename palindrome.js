@@ -8,6 +8,7 @@ var word7 = "!abcdefghijklm nop# !"
 var word8 = "Doc, note: I dissent. A fast never prevents a fatness. I diet on cod."
 
 function palindromeCheck (word) {
+  // regex removes everything that is not a character or number globally in entire string and sets all characters to uppercase
   var w = word.replace(/[^\w]|_/g, "").toUpperCase();
 
   for (var i = 0; i < w.length; i++) {
