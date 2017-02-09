@@ -8,7 +8,7 @@ var word7 = "!abcdefghijklm nop# !"
 var word8 = "Doc, note: I dissent. A fast never prevents a fatness. I diet on cod."
 
 function palindromeCheck (word) {
-  var w = word.replace(/[^\w\s]|_/g, "").replace(/\s+/g, "").toUpperCase();
+  var w = word.replace(/[^\w]|_/g, "").toUpperCase();
 
   for (var i = 0; i < w.length; i++) {
     var j = w.length - (i + 1);
